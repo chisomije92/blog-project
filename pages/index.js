@@ -1,9 +1,11 @@
 import Hero from "../components/home-page/hero";
-
+import Layout from "../components/layout/layout";
 const homePage = () => {
   return (
     <>
-      <Hero />
+      <Layout>
+        <Hero />
+      </Layout>
     </>
   );
 };
