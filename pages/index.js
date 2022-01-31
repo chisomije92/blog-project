@@ -1,6 +1,5 @@
 import FeaturedPosts from "../components/home-page/featured-posts";
 import Hero from "../components/home-page/hero";
-import Layout from "../components/layout/layout";
 
 const DUMMY_POSTS = [
   {
@@ -40,10 +39,10 @@ const DUMMY_POSTS = [
 const homePage = () => {
   return (
     <>
-      <Layout>
+      <>
         <Hero />
         <FeaturedPosts posts={DUMMY_POSTS} />
-      </Layout>
+      </>
     </>
   );
 };
