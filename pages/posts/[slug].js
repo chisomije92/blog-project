@@ -22,7 +22,7 @@ export const getStaticPaths = () => {
   const slugs = postFiles.map((postFile) => postFile.replace(/\.md$/, ""));
   return {
     paths: slugs.map((slug) => ({ params: { slug: slug } })),
-    fallback: true,
+    fallback: false,
   };
 };
 export default detailedPostsPage;
