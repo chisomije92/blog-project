@@ -1,10 +1,31 @@
+import { useState } from "react";
 import classes from "./contact-form.module.css";
 
 const ContactForm = () => {
+  const [enteredEmail, setEnteredEmail] = useState("");
+  const [enteredName, setEnteredName] = useState("");
+  const [enteredMessage, setEnteredMessage] = useState("");
+
+  const sendMessageHandler = (event) => {
+    event.preventDefault();
+
+    fetch("/api/contact", {
+      method: "POST",
+      body: JSON.stringify({
+        email: enteredEmail,
+        name: enteredName,
+        message: enteredMessage,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  };
+
   return (
     <section className={classes.contact}>
       <h1>How can I help you</h1>
-      <form className={classes.form}>
+      <form className={classes.form} onSubmit={sendMessageHandler}>
         <div className={classes.controls}>
           <div className={classes.control}>
             <label htmlFor="email">Your Email</label>
@@ -12,8 +33,8 @@ const ContactForm = () => {
               type="email"
               id="email"
               required
-              //   value={enteredEmail}
-              //   onChange={(event) => setEnteredEmail(event.target.value)}
+              value={enteredEmail}
+              onChange={(event) => setEnteredEmail(event.target.value)}
             />
           </div>
           <div className={classes.control}>
@@ -22,8 +43,8 @@ const ContactForm = () => {
               type="text"
               id="name"
               required
-              //   value={enteredName}
-              //   onChange={(event) => setEnteredName(event.target.value)}
+              value={enteredName}
+              onChange={(event) => setEnteredName(event.target.value)}
             />
           </div>
         </div>
@@ -33,8 +54,8 @@ const ContactForm = () => {
             id="message"
             rows="5"
             required
-            //   value={enteredMessage}
-            //   onChange={(event) => setEnteredMessage(event.target.value)}
+            value={enteredMessage}
+            onChange={(event) => setEnteredMessage(event.target.value)}
           ></textarea>
         </div>
 

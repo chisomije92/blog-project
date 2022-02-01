@@ -1,3 +1,7 @@
 module.exports = {
-  reactStrictMode: true,
-}
+  // reactStrictMode: true,
+  env: {
+    key: "WGsnb98t789M7eI5",
+    username: "Chisom",
+  },
+};
