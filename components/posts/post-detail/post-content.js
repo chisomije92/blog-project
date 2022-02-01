@@ -9,22 +9,25 @@ const PostContent = ({ post }) => {
   const imagePath = `/images/posts/${post.slug}/${post.image}`;
 
   const customImgRenderer = {
-    p({ node, children }) {
+    p(paragraph) {
+      const { node } = paragraph;
+
       if (node.children[0].tagName === "img") {
         const image = node.children[0];
+
         return (
           <div className={classes.image}>
             <Image
               src={`/images/posts/${post.slug}/${image.properties.src}`}
-              alt={image.properties.alt}
-              width="600"
-              height="300"
+              alt={image.alt}
+              width={600}
+              height={300}
             />
           </div>
         );
       }
 
-      return <p>{children}</p>;
+      return <p>{paragraph.children}</p>;
     },
     code(code) {
       const { className, children } = code;
@@ -43,28 +46,7 @@ const PostContent = ({ post }) => {
   return (
     <article className={classes.content}>
       <PostHeader title={post.title} image={imagePath} />
-      <ReactMarkdown
-        components={customImgRenderer}
-        // components={{
-        //   p: ({ node, children }) => {
-        //     if (node.children[0].tagName === "img") {
-        //       const image = node.children[0];
-        //       return (
-        //         <div className="image">
-        //           <Image
-        //             src={`/images/posts/${post.slug}/${image.properties.src}`}
-        //             alt={image.properties.alt}
-        //             width="600"
-        //             height="300"
-        //           />
-        //         </div>
-        //       );
-        //     }
-        //     // Return default child if it's not an image
-        //     return <p>{children}</p>;
-        //   },
-        // }}
-      >
+      <ReactMarkdown components={customImgRenderer}>
         {post.content}
       </ReactMarkdown>
     </article>
