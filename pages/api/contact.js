@@ -31,6 +31,7 @@ const handler = async (req, res) => {
       );
     } catch (err) {
       res.status(500).json({ message: "Connection to database failed" });
+      return;
     }
 
     const db = client.db();
@@ -43,7 +44,7 @@ const handler = async (req, res) => {
       res.status(500).json({ message: "Storing message failed!" });
       return;
     }
-
+    client.close();
     res
       .status(201)
       .json({ message: "Message stored successfully", content: newMessage });
