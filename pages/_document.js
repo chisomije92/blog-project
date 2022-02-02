@@ -6,9 +6,8 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head />
         <body>
-          <div id="overlays" />
           <Main />
-          <NextScript />
+          <NextScript /> <div id="notification" />
         </body>
       </Html>
     );
