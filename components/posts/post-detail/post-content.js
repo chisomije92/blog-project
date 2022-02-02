@@ -8,7 +8,7 @@ import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 const PostContent = ({ post }) => {
   const imagePath = `/images/posts/${post.slug}/${post.image}`;
 
-  const customImgRenderer = {
+  const customRenderer = {
     p(paragraph) {
       const { node } = paragraph;
 
@@ -46,9 +46,7 @@ const PostContent = ({ post }) => {
   return (
     <article className={classes.content}>
       <PostHeader title={post.title} image={imagePath} />
-      <ReactMarkdown components={customImgRenderer}>
-        {post.content}
-      </ReactMarkdown>
+      <ReactMarkdown components={customRenderer}>{post.content}</ReactMarkdown>
     </article>
   );
 };
