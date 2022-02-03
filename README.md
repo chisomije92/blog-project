@@ -1,34 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Blog Web App
 
-## Getting Started
+This is a personal blog web app built with the aim of enabling the author share his knowledge on website development with specific interest in the React library and related frameworks. The author also aims to use this blog to document his journey into the world of software development.
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- [Blog Web App](#blog-web-app)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+  - [Credits](#credits)
+  - [Author](#author)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Links
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Repo: [Add solution URL here](https://github.com/chisomije92/blog-project)
+- Live Site URL: [Add live site URL here](https://chisom-blog.vercel.app)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## My process
 
-## Learn More
+### Built with
 
-To learn more about Next.js, take a look at the following resources:
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- [Css Modules](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/) - For styles
+- [React](https://reactjs.org/) - JS library
+- [NextJS](https://nextjs.org/) - React framework
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### What I learned
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project aided me in gaining practice with the the use of the NextJS framework. I was particularly able to get familiar with the use of :
 
-## Deploy on Vercel
+- File-based routing
+- API routes
+- Static pre-generation
+- Server-side rendering
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Also, I was able to practice collection of data from form submission with MongoDB.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Credits
+
+My implementation of this project was possible thanks to the knowledge acquired from the courses below:
+
+- [React - The Complete Guide (incl Hooks, React Router, Redux)](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
+- [Next.js & React - The Complete Guide (incl. Two Paths!)](https://www.udemy.com/course/nextjs-react-the-complete-guide/)
+
+## Author
+
+**Chisom Ijeomah**
+
+- GitHub - [chisomije92](https://github.com/chisomije92)
+- Twitter - [@devManiac92](https://www.twitter.com/@devManiac92)
