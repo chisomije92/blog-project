@@ -18,8 +18,8 @@ This is a personal blog web app built with the aim of enabling the author share 
 
 ### Links
 
-- Repo: [Add solution URL here](https://github.com/chisomije92/blog-project)
-- Live Site URL: [Add live site URL here](https://chisom-blog.vercel.app)
+- Repo: [https://github.com/chisomije92/blog-project](https://github.com/chisomije92/blog-project)
+- Live Site URL: [https://chisom-blog.vercel.app](https://chisom-blog.vercel.app)
 
 ## My process
 
