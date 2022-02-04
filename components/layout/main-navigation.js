@@ -5,17 +5,21 @@ const MainNavigation = () => {
   return (
     <header className={classes.header}>
       <Link href="/" passHref>
-        <a>
+        <a className={classes.logoLink}>
           <Logo />
         </a>
       </Link>
       <nav>
         <ul>
           <li>
-            <Link href="/posts">Posts</Link>
+            <Link href="/posts">
+              <a>Posts</a>
+            </Link>
           </li>
           <li>
-            <Link href="/contact">Contact Me</Link>
+            <Link href="/contact">
+              <a>Contact Me</a>
+            </Link>
           </li>
         </ul>
       </nav>
