@@ -1,6 +1,6 @@
 # Blog Web App
 
-This is a personal blog web app built with the aim of enabling the author share his knowledge on website development with specific interest in the React library and related frameworks. The author also aims to use this blog to document his journey into the world of software development.
+This is a personal simple blog web app built with the aim of enabling the author share his knowledge on website development with specific interest in the React library and related frameworks. The author also aims to use this blog to document his journey into the world of software development.
 
 ## Table of contents
 
@@ -35,7 +35,7 @@ This is a personal blog web app built with the aim of enabling the author share 
 
 ### What I learned
 
-This project aided me in gaining useful practice with the the use of the NextJS framework. I was particularly able to get familiar with the following concepts:
+This project aided me in gaining practical knowledge in the the use of the NextJS framework. I was particularly able to get familiar with the following concepts:
 
 - File-based routing
 - API routes
