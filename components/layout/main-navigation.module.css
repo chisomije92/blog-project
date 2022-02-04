@@ -20,29 +20,20 @@
   margin: 0 var(--size-4);
 }
 
-.logoLink {
-  color: var(--color-grey-100);
-  font-size: var(--size-4);
-}
-
 .header a {
   color: var(--color-grey-100);
   font-size: var(--size-4);
-}
-
-.header a {
-  transition: transform 0.4s linear;
-}
-/* .header a.active  */
-.header a:hover,
-.header a:active {
-  color: var(--color-grey-200);
-  transform: scale(1.1);
 }
 
 .header ul li > a {
-  transition: transform 0.5s ease-in;
+  transition: all 0.5s ease-in;
   display: inline-block;
+}
+
+.header ul li > a:hover,
+.header ul li > a.active {
+  color: var(--color-grey-200);
+  transform: scale(1.1);
 }
 
 @media (min-width: 768px) {

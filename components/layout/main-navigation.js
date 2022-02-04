@@ -13,12 +13,14 @@ const MainNavigation = () => {
         <ul>
           <li>
             <Link href="/posts">
-              <a>Posts</a>
+              Posts
+              {/* <a>Posts</a> */}
             </Link>
           </li>
           <li>
             <Link href="/contact">
-              <a>Contact Me</a>
+              Contact Me
+              {/* <a>Contact Me</a> */}
             </Link>
           </li>
         </ul>
