@@ -35,7 +35,7 @@ This is a personal blog web app built with the aim of enabling the author share 
 
 ### What I learned
 
-This project aided me in gaining practice with the the use of the NextJS framework. I was particularly able to get familiar with the use of :
+This project aided me in gaining useful practice with the the use of the NextJS framework. I was particularly able to get familiar with the following concepts:
 
 - File-based routing
 - API routes
