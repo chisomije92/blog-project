@@ -25,6 +25,9 @@ body {
   --color-primary-600: #480264;
   --color-primary-700: #3d0264;
 
+  --color-gradient-1: #414345;
+  --color-gradient-2: #232526;
+
   --color-success-100: #a2f0bc;
   --color-success-500: #12bd4b;
 
@@ -43,7 +46,7 @@ body {
   --size-40: 10rem;
 
   margin: 0;
-  background-color: var(--color-grey-500);
+  background-color: var(--color-grey-400);
   color: #252525;
   font-family: "Roboto", sans-serif;
 }

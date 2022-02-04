@@ -1,10 +1,18 @@
 .hero {
   text-align: center;
-  background-image: linear-gradient(
-    to bottom,
-    var(--color-grey-900),
-    var(--color-grey-800)
-  );
+
+  background: var(--color-gradient-2); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    var(--color-gradient-1),
+    var(--color-gradient-2)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    var(--color-gradient-1),
+    var(--color-gradient-2)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   padding: var(--size-8) 0;
 }
 
@@ -28,7 +36,7 @@
 .hero h1 {
   font-size: var(--size-16);
   margin: var(--size-4) 0;
-  color: var(--color-grey-300);
+  color: var(--color-grey-100);
 }
 
 .hero p {

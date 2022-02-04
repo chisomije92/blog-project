@@ -14,7 +14,7 @@ const Hero = () => {
       </div>
       <h1>Hi! I`m Chisom</h1>
       <p>
-        I write about web development with specific interests in React and
+        I write about web development with specific interest in React and
         relevant frameworks.
       </p>
     </section>
