@@ -1,4 +1,6 @@
 # Blog Web App
+![blog screenshot](https://user-images.githubusercontent.com/68636386/152581036-afdaa07b-def3-46da-9e25-978dc58132ef.png)
+
 
 This is a personal simple blog web app built with the aim of enabling the author share his knowledge on website development with specific interest in the React library and related frameworks. The author also aims to use this blog to document his journey into the world of software development.
 
